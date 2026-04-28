@@ -1,0 +1,9 @@
+CREATE VIEW Region_Channel_Performance AS
+SELECT
+    Region,
+    Channel,
+    SUM(revenue) AS total_revenue,
+    SUM(profit) AS total_profit,
+    COUNT(DISTINCT Order_ID) AS total_orders
+FROM Clean_Sales_View
+GROUP BY Region, Channel;
