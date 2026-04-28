@@ -59,6 +59,24 @@ To keep the reporting layer clean and efficient, reusable SQL views were created
 - `region_store_performance` → Combined breakdown
 These views act as a semantic layer between raw data and Power BI.
 
+## Infrastructure Profile: 
+### Component: Backend 
+Azure SQL Database was provisioned as a cloud-native Azure SQL Database to serve as the primary data warehouse for the Yul Analytics retail engine. The environment is configured using a Serverless compute model, ensuring high performance during data processing while minimizing operational costs through automated pausing during idle periods.
+
+### Azure Resource Identity
+* **SQL Server:** `yul-retail-server`
+* **Database:** `YulRetailDB`
+* **Resource Type:** `microsoft.sql/servers`
+* **Deployment ID:** ` /subscriptions/b15c1074-cb99-4f48-b670-2d6a8b0065a8/resourceGroups/yul-retail/providers/Microsoft.Sql/servers/yul-retail-server/databases/YulRetailDB `
+
+### Technical Specifications
+- Service Tier: General Purpose Serverless (Gen5)
+- Compute Power: 2 vCores (Auto-scaling from 0.5 min)
+- Storage: 32 GB Max (Local Redundancy)
+- Region: Central US (centralus)
+- Collation: SQL_Latin1_General_CP1_CI_AS
+- Cost Management: Auto-pause enabled (60-minute delay)
+
 ## Power BI Dashboard
 The dashboard provides a clear, interactive view of the business.
 ### Features:
