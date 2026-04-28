@@ -1,4 +1,7 @@
-# Retail Wellness Sales Analytics (2025)
+# YUL Retail Wellness Sales Analytics (2025)
+<p align="center">
+  <img src="docs/Yul_Logo.png" alt="Yul Logo" width="400">
+</p>
 ## Project Overview
 
 This project analyzes 2025 sales data for a wellness brand focused on hair and facial care products. The goal is to uncover actionable business insights across different regions and sales channels, and present them through a structured analytics pipeline using SQL and Power BI. This project will assist business stakeholder (e.g., Head of Sales or Marketing) needs clear answers to questions about performance, trends, and growth opportunities.
@@ -13,36 +16,44 @@ This analysis answers key questions such as:
 - Where are the biggest opportunities for growth?
   
 ## Tech Stack
-Database: Azure SQL
-Querying: SQL (Views for analytics layer)
-Visualization: Power BI
-Version Control: GitHub
+- Database: Azure SQL
+- Querying: SQL (Views for analytics layer)
+- Visualization: Power BI
+- Version Control: GitHub
 
 ## Project Structure
+```
 /sql        → SQL scripts (views, transformations)
 /data       → Raw dataset (CSV)
 /powerbi    → Power BI dashboard file (.pbix)
 /docs       → Screenshots and documentation
+```
 
 ## Data Overview
 The dataset represents sales transactions from 2025.
 ### Key Fields:
-- date – Transaction date
-- region – Sales region
-- store_type – Local, Online, Sephora
-- product_category – Facial care categories
-- revenue – Sales revenue
-- units_sold – Quantity sold
+- `Order_ID` – Order Identifier 
+- `Date` – Order Date 
+- `Product_ID` – Product Identifier 
+- `Product_Name` – Product Name (Char)
+- `Category` – Product Type: Hair, Skin (Char)
+- `Quantity` – Product count purchased in Order 
+- `Unit_Cost` – Product Sales Cost 
+- `Unit_Price` – Product Sales Price 
+- `Discount` – Order discount applied (Percent)
+- `Channel` – Location type where order was placed: Online: Sephora, Online, Flagship Store, Olive Young
+- `Region` – Geographic Location where order was placed: London, Tokyo, NYC, Seoul
+- `Skin_Type` – Categorizes products based on the targeted skin profile, such as Oily, Dry, Combination, or Sensitive.
 
 ## SQL Analytics Layer
 To keep the reporting layer clean and efficient, reusable SQL views were created.
 ### Key Views:
-- view_total_sales → Overall revenue and units sold
-- view_sales_by_region → Regional performance ranking
-- view_sales_by_store_type → Channel comparison
-- view_monthly_sales → Time-based trends
-- view_top_categories → Product performance
-- view_region_store_performance → Combined breakdown
+- `total_sales` → Overall revenue and units sold
+- `sales_by_region` → Regional performance ranking
+- `sales_by_store_type` → Channel comparison
+- `monthly_sales` → Time-based trends
+- `top_categories` → Product performance
+- `region_store_performance` → Combined breakdown
 These views act as a semantic layer between raw data and Power BI.
 
 ## Power BI Dashboard
