@@ -2,6 +2,7 @@
 <p align="center">
   <img src="docs/Yul_Logo.png" alt="Yul Logo" width="400">
 </p>
+
 ## Project Overview
 
 This project analyzes 2025 sales data for a wellness brand focused on hair and facial care products. The goal is to uncover actionable business insights across different regions and sales channels, and present them through a structured analytics pipeline using SQL and Power BI. This project will assist business stakeholder (e.g., Head of Sales or Marketing) needs clear answers to questions about performance, trends, and growth opportunities.
