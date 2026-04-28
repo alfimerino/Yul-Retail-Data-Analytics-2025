@@ -1,8 +1,3 @@
-SELECT
-    SUM(Quantity) AS Total_Products_Sold,
-    SUM(Unit_Price * Quantity) AS Total_Revenue,
-    SUM((Unit_Price - Unit_Cost) * Quantity) AS Total_Profit
-FROM YUL_KBeauty_Sales_2026;
 
 SELECT
     Order_ID,
@@ -25,4 +20,4 @@ SELECT
 
 FROM YUL_KBeauty_Sales_2026
 WHERE Quantity > 0
-  AND Unit_Price IS NOT NULL;
+  AND Unit_Price IS NOT NULL
