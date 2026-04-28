@@ -1,4 +1,3 @@
-CREATE VIEW Global_Retail_Summary AS
 SELECT
     SUM(Quantity) AS Total_Products_Sold,
     SUM(Unit_Price * Quantity) AS Total_Revenue,
