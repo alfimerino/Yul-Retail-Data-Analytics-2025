@@ -16,7 +16,8 @@ SELECT
     -- Derived metrics
     (Quantity * Unit_Price * (1 - Discount)) AS revenue,
     (Quantity * Unit_Cost) AS cost,
-    (Quantity * Unit_Price * (1 - Discount)) - (Quantity * Unit_Cost) AS profit
+    (Quantity * Unit_Price * (1 - Discount)) - (Quantity * Unit_Cost) AS profit,
+    (Quantity * Unit_Price * Discount) AS discount_dollars
 
 FROM YUL_KBeauty_Sales_2026
 WHERE Quantity > 0
