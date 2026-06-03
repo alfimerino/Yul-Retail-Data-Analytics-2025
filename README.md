@@ -28,7 +28,7 @@ This analysis answers key questions such as:
 ```
 /sql        → SQL scripts (views, transformations)
 /data       → Raw dataset (CSV)
-/powerbi    → Google Data Studio dashboard file (.pbix)
+/dashboard    → Google Data Studio dashboard file (.pbix)
 /docs       → Screenshots and documentation
 ```
 
