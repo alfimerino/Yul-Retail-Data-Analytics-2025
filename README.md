@@ -5,7 +5,7 @@
 
 [![Track the progress of this project](https://img.shields.io/badge/Project-Kanban%20Board-blue?style=for-the-badge&logo=github)](https://github.com/users/alfimerino/projects/4)
 
-[![Looker Studio](https://img.shields.io/badge/Dashboard-Looker_Studio-4285F4?logo=google&style=for-the-badge)](https://datastudio.google.com/s/hcQGSLVweMk)
+[![Data Studio](https://img.shields.io/badge/Dashboard-Looker_Studio-4285F4?logo=google&style=for-the-badge)](https://datastudio.google.com/s/hcQGSLVweMk)
 
 ## Project Overview
 
@@ -115,7 +115,7 @@ Azure SQL Database was provisioned as a cloud-native Azure SQL Database to serve
 - Cost Management: Auto-pause enabled (60-minute delay)
 
 ## Google Data Studio Dashboard
-[Looker Studio Dashboard](https://datastudio.google.com/s/hcQGSLVweMk)
+[Data Studio Dashboard](https://datastudio.google.com/s/hcQGSLVweMk)
 
 ### Features:
 KPI cards for total revenue and units sold
