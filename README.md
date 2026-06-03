@@ -139,13 +139,6 @@ Store type comparison (channel performance)
 Monthly sales trend (line chart)
 Filters for region, store type, and category
 
-## Key Insights
-(Replace with your actual findings)
-The top-performing region was [Region Name], contributing the highest revenue
-Online sales outperformed physical retail channels
-Sales peaked during [Month/Season], indicating seasonal demand
-[Product Category] was the highest revenue-generating category
-
 ## AI Use Case (Optional)
 This project can be extended with tools like Microsoft Copilot or ChatGPT to allow business users to ask questions such as:
 “What region had the highest sales?”
