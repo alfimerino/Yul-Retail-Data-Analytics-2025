@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-This project analyzes 2025 sales data for a wellness brand focused on hair and facial care products. The goal is to uncover actionable business insights across different regions and sales channels, and present them through a structured analytics pipeline using SQL and Power BI. This project will assist business stakeholder (e.g., Head of Sales or Marketing) needs clear answers to questions about performance, trends, and growth opportunities.
+This project analyzes 2025 sales data for a wellness brand focused on hair and facial care products. The goal is to uncover actionable business insights across different regions and sales channels, and present them through a structured analytics pipeline using SQL and Google Data Studio. This project will assist business stakeholder (e.g., Head of Sales or Marketing) needs clear answers to questions about performance, trends, and growth opportunities.
 
 ## Business Questions
 
@@ -21,14 +21,14 @@ This analysis answers key questions such as:
 ## Tech Stack
 - Database: Azure SQL
 - Querying: SQL (Views for analytics layer)
-- Visualization: Power BI
+- Visualization: Google Data Studio
 - Version Control: GitHub
 
 ## Project Structure
 ```
 /sql        → SQL scripts (views, transformations)
 /data       → Raw dataset (CSV)
-/powerbi    → Power BI dashboard file (.pbix)
+/powerbi    → Google Data Studio dashboard file (.pbix)
 /docs       → Screenshots and documentation
 ```
 
@@ -57,7 +57,7 @@ To keep the reporting layer clean and efficient, reusable SQL views were created
 - `monthly_sales` → Time-based trends
 - `top_categories` → Product performance
 - `region_store_performance` → Combined breakdown
-These views act as a semantic layer between raw data and Power BI.
+These views act as a semantic layer between raw data and Google Data Studio.
 
 ## Infrastructure Profile: 
 ### Component: Backend 
@@ -77,7 +77,7 @@ Azure SQL Database was provisioned as a cloud-native Azure SQL Database to serve
 - Collation: SQL_Latin1_General_CP1_CI_AS
 - Cost Management: Auto-pause enabled (60-minute delay)
 
-## Power BI Dashboard
+## Google Data Studio Dashboard
 The dashboard provides a clear, interactive view of the business.
 ### Features:
 KPI cards for total revenue and units sold
